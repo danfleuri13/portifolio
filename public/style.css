@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +11,52 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     color: #222;
 }
+/*bootstrap button 3d */
 
+
+.button {
+    display: inline-block;
+    background: rgb(38, 112, 172);
+    color: #f0f0f0; ;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+.button:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+            transform: translate(0px, -10px) scale(1.2);
+}
+
+/**/
+
+.buttonSocial {
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+.buttonSocial:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+            transform: translate(0px, -10px) scale(1.2);
+}
+
+.animationH3 {
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+.animationH3:hover {  
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+            transform: translate(0px, -10px) scale(1.2);
+}
 
 .nav {
     width: 100%;
@@ -43,10 +90,6 @@ html, body {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.navItens a:hover {
-    background-color: rgb(10, 97, 68);
 }
 
 .main {
@@ -100,12 +143,12 @@ html, body {
 }
 
 .profilePic {
-    max-width: 20vw;
+    max-width: 30vw;
     padding: 10px;
 }
 
 .profileText * {
-    padding: 10px;
+    padding: 4px;
 }
 
 .contact-item {
@@ -133,7 +176,7 @@ html, body {
 
 
 .separator:last-of-type {
-    margin: 15px 0;
+    margin: 50px 0;
     opacity: 0;
 }
 
@@ -150,28 +193,11 @@ html, body {
 }
 
 
-/* criando dark mode */
 
-
-body {
-background-color: #e8ffff; 
-color: #e2f0ee;
-}
-
-h1 {
-color: #e2f0ee;
-}
-
-h3 {
-color: #e2f0ee;
-}
-
-
-
-
+/*light mode*/
 @media (prefers-color-scheme: light){
     body {
-        background-color: #ffffff; 
+        background-color: #f0f0f0; 
         color: #000000;
         width: 80%;
         margin: 0 auto;
@@ -182,7 +208,7 @@ color: #e2f0ee;
     }
     
     h3 {
-        color: #000000;
+        color: rgb(38, 112, 172);
     }
     
     img {
@@ -193,20 +219,22 @@ color: #e2f0ee;
         color: #000000;
     }
 }
+
+/* dark mode*/
 @media (prefers-color-scheme: dark) {
 body {
-    background-color: #010101; 
+    background-color: #131212; 
     color: #e2f0ee;
     width: 80%;
     margin: 0 auto;
 }
 
 h1 {
-    color: #e2f0ee;
+    color: #d8d4d4;
 }
 
 h3 {
-    color: #e2f0ee;
+    color: rgb(38, 112, 172);
 }
 
 img {
@@ -214,7 +242,14 @@ img {
 }
 
 p{
-    color: #e2f0ee;
+    color: #ffffff;
 }
 
 }
+
+
+
+
+
+
+
