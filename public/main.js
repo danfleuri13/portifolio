@@ -1,7 +1,3 @@
-function retrieveRepos() {
-    const user = 'danfleuri13';
-    const container = document.getElementById("main");
-}
 
 function showHome() {
     document.getElementById("main").style.display = 'grid';
