@@ -238,6 +238,6 @@ footer {
     }
 
     .skills-grid {
-        grid-template-columns: 1fr; /* Em celular, 1 coluna apenas */
+        grid-template-columns: 1fr; 
     }
 }
