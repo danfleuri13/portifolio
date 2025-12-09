@@ -1,140 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Daniel Fleuri - Desenvolvedor Full Stack Jr">
+    
+    <title>Daniel Fleuri | Desenvolvedor Full Stack</title>
+    
     <link rel="stylesheet" type="text/css" href="public/style.css" />
-    <script src="public/main.js"></script>
-    <title>Portfólio - Daniel Fleuri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="./public/logo-site.png" type="image/x-icon">
-    
 </head>
-<body onload="retrieveRepos()">
-    <ion-icon  src = "./public/..png" > </ion-icon >
+
+<body>
     
-    <header class="nav">
+    <nav class="nav">
+        <div class="logo">
+            <h3>Daniel Fleuri</h3>
+        </div>
         <ul class="navItens" id="menu">
-            <li>
-                <a onclick="showHome()", class="button">Home</a>
-            </li>
-            <li>
-                <a onclick="showProfile()", class="button">Cursos</a>
-            </li>
-            <li>
-                <a onclick="showExp()", class="button">Experiencias</a>
-            </li>
+            <li><a href="#home" class="button">Home</a></li>
+            <li><a href="#sobre" class="button">Sobre</a></li>
+            <li><a href="#skills" class="button">Skills</a></li>
+            <li><a href="#experiencia" class="button">Experiência</a></li>
+            <li><a href="#contato" class="button">Contato</a></li>
         </ul>
+    </nav>
 
-        <h3 class="animationH3">
-            Daniel Fleuri
-        </h3>
-
-        <ul class="navItens">
-            <li>
-                <img src="public/instagram-icon.png" onclick='window.open("https://www.instagram.com/danielfleuri/")', class="buttonSocial"/>
-            </li>
-            <li>
-                <img src="public/github-icon.png" onclick='window.open("https://github.com/danfleuri13?tab=repositories")', class="buttonSocial" />
-            </li>
-            <li>
-                <img src="public/linkedin-icon.png" onclick='window.open("https://www.linkedin.com/in/daniel-fleuri-340b6422b/")', class="buttonSocial"/>
-            </li>
-        </ul>
+    <header class="hero" id="home">
+        <div class="profileImageContainer">
+            <img class="profilePic" src="public/daniel-foto.png" alt="Foto de Daniel Fleuri" />
+        </div>
+        <div class="heroText">
+            <h1>Olá, sou Daniel Fleuri</h1>
+            <h2>Desenvolvedor Full Stack Jr</h2>
+            
+            
+            <div class="social-links">
+                <a href="https://github.com/danfleuri13" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/danielfleuri13/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
     </header>
 
-    <section class="main" id="main">
-        <div class="profileImageContainer">
-            <img class="profilePic" src="public/daniel-foto.png" />
-        </div>
+    <main>
+    <section class="section-container" id="sobre">
+    <h2 class="section-title">Sobre Mim</h2>
+    <div class="content-text">
+        <p>
+            Minha jornada na tecnologia começou muito antes de escrever minha primeira linha de código. 
+            Durante <strong>10 anos atuando como Técnico de Áudio e Vídeo</strong>, desenvolvi uma habilidade crucial para qualquer desenvolvedor: 
+            a capacidade de rastrear falhas lógicas (*troubleshooting*) e resolver problemas críticos em tempo real. 
+            Hoje, trago essa mentalidade analítica e a disciplina de eventos ao vivo para o <strong>Desenvolvimento de Software</strong>.
+        </p>
 
-        <div class="profileText">
-            <h3>
-            Sobre mim:
-            </h3>
-                <p>Olá, me chamo Daniel Fleuri, atualmente tenho 28 anos e sou desenvolvedor Fullstack Jr</p>
-                <p> Trabalhei dos 15 anos até hoje como técnico de som, atuando em boates, eventos, igrejas e atualmente trabalho como técnico de som, No Vikings Pub e na TV Pai Eterno,
-                como operador de audio e video.</p>
-                <p> Durante esse tempo como operador de audio, tambem fiz outros serviços envolvendo o audiovisual, como edição de pequenos videos, lives,
-                transmissões e sonorização de campos de futebol.</p>
-                <p>Estou migrando de area e as linguaguens que estou especializando são: Github, Python, Css, Html,Bootstrap, React, Typescript, Javascript, NodeJs, VueJs e React Native tambem tenho conhecimento com banco de dados relacionais Postgress, Cursei Jogos Digitais pelo Senac
-                então tambem tenho conhecimento em C#, usando a engine do Unity.
-                </p>
-                <p> Tenho experiencia autonoma em informática, formato computadores, configuro internet, limpeza e manutenção, 
-                dei manutenção em computadores das escolas publicas de Paraúna-Goias.</p>
-                <p>Atualmente Estou desenvolvendo soft skills com projetos no SENAC infitinty e no programa de pré aceleração do Sebrae.<br> Além dos projetos que vc encontra no meu github.</p>
-                <br>
-            </p>
-        </div>
+        <p>
+            Em minha transição de carreira para <strong>Desenvolvedor Full Stack</strong>, não busco apenas "fazer sites", mas construir soluções completas e escaláveis. 
+            Tenho me especializado em criar ecossistemas que unem a robustez do <strong>Python</strong> e bancos de dados relacionais (SQL) no back-end, 
+            com a interatividade do <strong>React</strong> no front-end. Além disso, adoto práticas modernas de desenvolvimento, 
+            utilizando <strong>Docker</strong> para containerização e garantindo que minhas entregas funcionem em qualquer ambiente.
+        </p>
 
-    </section>
+        <p>
+            Minha formação vai além da sintaxe do código. Através de experiências no <strong>Senac</strong> (Jogos Digitais e Sistemas) 
+            e programas de aceleração como o do <strong>Sebrae</strong>, venho aprimorando também minha visão de negócio e metodologias ágeis.
+        </p>
 
-    <section class="profile" id="profile">
+        <p>
+            Busco minha primeira oportunidade formal como desenvolvedor para aplicar essa combinação única: 
+            a <strong>maturidade profissional</strong> de quem já liderou operações técnicas, somada à <strong>paixão e técnica</strong> de um programador em constante evolução.
+        </p>
+    </div>
+</section>
 
-        <div class="profileText">
-            <h1> Cursos e qualificações: <br> <br>
-            </h1>
+        <section class="section-container" id="skills">
+            <h2 class="section-title">Tecnologias & Ferramentas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+) & TypeScript</li>
+                        <li>React.js</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
                 
-            <h3>Infonovo 2010-2011</h3>
-            <p>Curso tecnico de informatica, montagem e manutenção de computadores e redes, formatação, digitação e pacote office</p>
-            <h3>Jogos Digitais 2014-2017</h3>
-            <p>Curso Superior - Senac Cora coralina</p>
-            <h3>Tecnico e operador de Audio 2020</h3>
-            <p>Curso Tecnico feito pelo Instituto Santana EAD</p>
-            <h3>Trilhas de conhecimento Html, Css e Python 2022</h3>
-            <p>Fundação Bradesco EAD</p>
-            <h3>Desenvolvedor de Sistemas 2022</h3>
-            <p>Curso profissionalizante - Senac Cora Coralina </p>
-            <h3>Git e Github 2022 </h3>
-            <p>Senac Cora Coralina </p>
-            <br>
+                <div class="skill-category">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>C# (Conhecimento prévio em Unity)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Infra & Dados</h3>
+                    <ul>
+                        <li>MySQL & PostgreSQL</li>
+                        <li>Git & GitHub</li>
+                        <li><strong>Docker</strong> (Containerização)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="experiencia">
+            <h2 class="section-title">Trajetória Profissional</h2>
+            
+            <div class="job-item">
+                <h3>Desenvolvimento de Soft Skills & Projetos</h3>
+                <span class="date">Atualmente</span>
+                <p>Participação no SENAC Infinity e programa de pré-aceleração do Sebrae. Foco em metodologia ágil e desenvolvimento de aplicações web.</p>
+            </div>
+
+            <div class="job-item">
+                <h3>Operador de Áudio e Vídeo</h3>
+                <span class="date">2020 - 2021</span>
+                <p><strong>TV Pai Eterno</strong></p>
+                <p>Responsável pela operação técnica. Desenvolvimento de raciocínio lógico apurado para solução de falhas em tempo real e gestão de fluxo de sinal.</p>
+            </div>
+            
+            <div class="job-item">
+                <h3>Operador de Áudio</h3>
+                <span class="date">2019 - Atualmente</span>
+                <p><strong>Vikings Pub </strong></p>
+                <p>Responsável pela operação técnica.</p>
+            </div>
+            
+            </section>
+        
+        <section class="section-container" id="formacao">
+            <h2 class="section-title">Formação</h2>
+            <ul>
+                <li><strong>Desenvolvedor de Sistemas</strong> - Senac Cora Coralina (2022)</li>
+                <li><strong>Jogos Digitais</strong> - Senac Cora Coralina (2014-2017)</li>
+                <li><strong>Cursos Livres:</strong> Trilha Fullstack, Git/GitHub, Docker.</li>
+                <li><strong>Analise de dados </strong>- EBAC (2025-2026)</li> 
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <h2>Vamos conversar?</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:danielfleuri_13@hotmail.com">danielfleuri_13@hotmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://api.whatsapp.com/send?phone=5562999891071" target="_blank">+55 (62) 9 9989-1071</a>
+            </div>
         </div>
-    
-    </section>
+        <p class="copyright">© 2025 Daniel Fleuri. Desenvolvido com HTML, CSS</p>
+    </footer>
 
-    <section class="exp" id="exp">
-    
-        <div class="profileText">
-            <h1> Experiencias Profissionais <br> <br>
-            </h1>
-        
-            <h3>Studio7</h3>
-            <p>Ex-Socio proprietario studio7 produçoes e eventos, operador de audio e video. (2011-2021)</p>
-            <h3>Colégio Estadual Maria Silva</h3>
-            <p>Professor substituto e Tecnico em informatica. 2018 (experiencia de 3 meses)</p>
-            <h3>Vikings Pub</h3>
-            <p>Operador de audio. 2020-atualmente</p>
-            <h3>TV Pai Eterno</h3>
-            <p>Operador de audio. 2022-atualmente</p>
-            <br>
-        </div>  
-    
-    </section>
-
-
-
-    <li class="contact-item">
-    <div class="icon-box">
-        <img class="animationH3" src="public/phone-call.png" />
-    </div>
-    <div class="contact-info">
-        <p class="contact-title">Celular</p>
-
-        <a href="https://api.whatsapp.com/send?phone=5562999891071" class="contact-link">+55 (62) 9 9989-1071</a>
-    </div>
-
-    
-    <div class="icon-box">
-        <img class="animationH3" src="public/mail-icon.png">
-    </div>
-    <div class="contact-info">
-        
-        <p class="contact-title">Email</p>
-        <a href="mailto:danielfleuri_13@hotmail.com?subject=Olá Tudo bem?" class="contact-link">danielfleuri_13@hotmail.com</a>
-        
-    </div>
-
-
+    <script src="public/main.js"></script>
 </body>
-
 </html>
